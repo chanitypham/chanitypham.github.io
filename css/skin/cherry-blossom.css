@@ -220,15 +220,19 @@ a:hover, a:focus {
 
 
 /* === Buttons === */
+/*
 .btn-default, .btn-default:focus, .btn-default.focus, .btn-default:active, .btn-default.active { 
-	background-image: linear-gradient(to right top, #ff7d7b, #ff9db7, #fbc0e2, #f4e2f9, #ffffff);
-	color: rgb(0, 0, 0);
-	border: 1px #000000;
+
+	color: #ffffff;
+    background: #000000;
+
 }
 .btn-default:hover {
 	color: rgb(0, 0, 0);
 	border: 1px #ff7d7b;
-	background-image: linear-gradient(to left bottom, #ff7d7b, #ff9db7, #fbc0e2, #f4e2f9, #ffffff);
+	background-image: linear-gradient(to right, #ff7d7b, #ff9db7, #fbc0e2, 
+	#f4e2f9, #ffffff);
+	border: 1px solid #000000;
 }
 .btn-primary, .btn-primary:focus, .btn-primary.focus, .btn-primary:active, .btn-primary.active {
 	background-color: #3078B3;
@@ -245,7 +249,14 @@ a:hover, a:focus {
 .btn-danger:hover {
 	background-color: #D81508;
 	color: #FFF;
-}
+}*/
+
+
+
+
+
+
+
 
 
 /* === To Top === */
