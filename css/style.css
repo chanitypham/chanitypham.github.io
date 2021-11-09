@@ -284,6 +284,8 @@ section {
 	text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
 	font-family: "Itim", Helvetica, Arial, sans-serif!important;
 	color: #fff;
+	background-color: rgba(0, 0, 0, 0.23);
+	border-radius: 30px!important;
 }
 #text-carousel-intro-section .caption p {
 	letter-spacing: 2px;
