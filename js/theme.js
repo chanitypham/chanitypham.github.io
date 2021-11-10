@@ -194,3 +194,12 @@ $(document).on('click','.navbar-collapse.in',function(e) {
         $(this).collapse('hide');
     }
 });
+
+
+
+// Scroll bar // 
+$(document).ready(function () {
+    if (!$.browser.webkit) {
+        $('.wrapper').html('<p>Sorry! Non webkit users. :(</p>');
+    }
+});
