@@ -1136,16 +1136,18 @@ p.subtitle {
 .cool-btn {
 	flex: 1 1 auto;
 	margin: 10px;
-	padding: 10px 30px;
+	padding: 10px 50px;
 	text-align: center;
 	text-transform: uppercase;
 	transition: 0.5s;
 	background-size: 200% auto;
 	color: rgb(235, 235, 235)!important;
 	text-shadow: 0px 0px 10px rgba(0,0,0,0.2);
-	box-shadow: 0 0 20px rgb(224, 224, 224);
+	/*box-shadow: 0 0 5px rgb(147 147 147);*/
 	border-radius: 20px!important;
+	border: 1px solid #28A0BE;
 	letter-spacing: 1px;
+	font-weight: 800
    }
 
 .cool-btn:hover {
@@ -1154,9 +1156,9 @@ p.subtitle {
 }
 
 .btn, .btn:active {
-	background-image: linear-gradient(to right, #70cee6 0%, #1692b1 50%, #70cee6 100%);
+	background-image: linear-gradient(to right, #0f657a 0%, #4099af 25%, #88d9ed 50%, #4099af 75%, #0f657a 100%);
 	color: white!important;
-  }
+	}
 
 /* Scroll to top button */
 .scrolltotop {
