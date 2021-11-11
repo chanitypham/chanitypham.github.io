@@ -136,7 +136,7 @@ new WOW().init();
 
 $('.counter').counterUp({
     delay: 10,
-    time: 2000
+    time: 1200
 });
 
 
@@ -152,7 +152,7 @@ $('.portfolio_menu ul li').click(function(){
 
 var $container = $('#portfolio');
 $container.isotope({
-  itemSelector: '.col-sm-4',
+  itemSelector: '.col-sm-3',
   layoutMode: 'fitRows'
 });
 $('#filters').on( 'click', 'a', function() {
@@ -203,3 +203,14 @@ $(document).ready(function () {
         $('.wrapper').html('<p>Sorry! Non webkit users. :(</p>');
     }
 });
+
+
+
+// Pop up //
+$(".Click-here").on('click', function() {
+    $(".custom-model-main").addClass('model-open');
+  }); 
+  $(".close-btn, .bg-overlay").click(function(){
+    $(".custom-model-main").removeClass('model-open');
+  });
+
