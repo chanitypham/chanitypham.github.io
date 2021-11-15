@@ -129,7 +129,23 @@ section {
 .text-white { color: #FFF; }
 .text-black {color: #000000}
 .text-off-white { color: #e7e7e7;}
-
+.text-blue {
+	color: #0b6a81;
+}
+.text-link-blue {
+	color: #0b6a81;
+	text-decoration: underline;
+ }
+ .text-link-blue:hover {
+	color: #60C1D9;
+}
+ .title-link-blue {
+	color: #0b6a81;
+	text-decoration: underline;
+ }
+ .title-link-blue:hover {
+	color: #60C1D9;
+ }
 
 /* ===== Begin navbar ===== */
 .navbar {
@@ -1135,7 +1151,6 @@ p.subtitle {
 
 .cool-btn {
 	flex: 1 1 auto;
-	margin: 10px;
 	padding: 10px 50px;
 	text-align: center;
 	text-transform: uppercase;
@@ -1155,10 +1170,55 @@ p.subtitle {
 	font-weight: bolder;
 }
 
+.nocurved-cool-btn {
+	flex: 1 1 auto;
+	padding: 10px 50px;
+	text-align: center;
+	text-transform: uppercase;
+	transition: 0.5s;
+	background-size: 200% auto;
+	color: rgb(235, 235, 235)!important;
+	text-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+	/*box-shadow: 0 0 5px rgb(147 147 147);*/
+	border: 1px solid #28A0BE;
+	letter-spacing: 1px;
+	font-weight: 800
+}
+
+.nocurved-cool-btn:hover {
+	background-position: right center;
+	font-weight: bolder;
+}
+
+
 .btn, .btn:active {
 	background-image: linear-gradient(to right, #0f657a 0%, #4099af 25%, #88d9ed 50%, #4099af 75%, #0f657a 100%);
 	color: white!important;
 	}
+
+.normal-btn {
+	flex: 1 1 auto;
+	text-align: center;
+	transition: 0.5s;
+	background-size: 200% auto;
+	color: rgb(235, 235, 235)!important;
+	text-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+	/*box-shadow: 0 0 5px rgb(147 147 147);*/
+	border: 1px solid #28A0BE;
+	font-weight: 400;
+	border-radius: 20px!important;
+	}
+
+.normal-btn:hover {
+	background-position: right center;
+	font-weight: bolder;
+}
+
+.btn, .btn:active {
+	background-image: linear-gradient(to right, #0f657a 0%, #4099af 25%, #88d9ed 50%, #4099af 75%, #0f657a 100%);
+	color: white!important;
+	}
+
 
 /* Scroll to top button */
 .scrolltotop {
@@ -1249,6 +1309,7 @@ html::-webkit-scrollbar-thumb:active {
 	width: calc(50% - 40px);
 	padding: 20px;
 	position: relative;
+	border-radius: 20px!important;
   }
   .wrapper .row section::before{
 	position: absolute;
@@ -1274,7 +1335,7 @@ html::-webkit-scrollbar-thumb:active {
 	width: 40px;
 	text-align: center;
 	line-height: 40px;
-	border-radius: 50%;
+	border-radius: 20px!important;
 	color: #28A0BE;
 	font-size: 17px;
 	box-shadow: 0 0 0 4px #afefff, inset 0 2px 0 rgba(0,0,0,0.08), 0 3px 0 4px rgba(0,0,0,0.05);
@@ -1300,8 +1361,9 @@ html::-webkit-scrollbar-thumb:active {
 	justify-content: space-between;
   }
   .row section .details .title{
-	font-size: 22px;
+	font-size: 18px;
 	font-weight: 600;
+	line-height: 30px;
   }
   .row section p{
 	margin: 10px 0 17px 0;
@@ -1319,6 +1381,79 @@ html::-webkit-scrollbar-thumb:active {
   .row section .bottom a:hover{
 	transform: scale(0.97);
   }
+
+.row section .timestamps {
+	color:rgb(121, 121, 121);
+	margin: 0px 0px 8px 0px;
+}
+
+
+.experience-img {
+	padding: 10px 10px 10px 0px;
+	width: calc(50% - 2px);
+	height: auto;
+	border-radius: 20px!important;
+}
+
+/* thumbnail for experience img */
+.thumbnail,
+.img-thumbnail {
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, .075);
+          box-shadow: 0 1px 2px rgba(0, 0, 0, .075);
+}
+
+.img-responsive,
+.thumbnail > img,
+.thumbnail a > img,
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.img-rounded {
+  border-radius: 6px;
+}
+.img-thumbnail {
+  display: inline-block;
+  max-width: 100%;
+  height: auto;
+  padding: 4px;
+  line-height: 1.42857143;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  -webkit-transition: all .2s ease-in-out;
+       -o-transition: all .2s ease-in-out;
+          transition: all .2s ease-in-out;
+}
+.thumbnail {
+	display: block;
+	padding: 4px;
+	margin-bottom: 20px;
+	line-height: 1.42857143;
+	background-color: #fff;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	-webkit-transition: border .2s ease-in-out;
+		 -o-transition: border .2s ease-in-out;
+			transition: border .2s ease-in-out;
+  }
+  .thumbnail > img,
+  .thumbnail a > img {
+	margin-right: auto;
+	margin-left: auto;
+  }
+  a.thumbnail:hover,
+  a.thumbnail:focus,
+  a.thumbnail.active {
+	border-color: #337ab7;
+  }
+  .thumbnail .caption {
+	padding: 9px;
+	color: #333;
+  }
+
   @media(max-width: 790px){
 	.wrapper .center-line{
 	  left: 40px;

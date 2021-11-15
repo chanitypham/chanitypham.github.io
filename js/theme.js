@@ -214,3 +214,14 @@ $(".Click-here").on('click', function() {
     $(".custom-model-main").removeClass('model-open');
   });
 
+
+
+// Toggle drop down data //
+function dropDown() {
+    var x = document.getElementById("dropDownData");
+    if (x.style.display !== "none") {
+        x.style.display = "none"
+    } else {
+        x.style.display = "block";
+    }
+}
