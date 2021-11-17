@@ -306,7 +306,8 @@ section {
 	margin-bottom: 5px;
 	font-size: 75px!important;
 	text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
-	font-family: "Itim", Helvetica, Arial, sans-serif!important;
+	/*font-family: "Itim", Helvetica, Arial, sans-serif!important;*/
+	font-family: 'Itim', Arial, Helvetica, sans-serif!important;
 	color: #fff;
 	background-color: rgba(0, 0, 0, 0.3);
 	border-radius: 68px!important;
