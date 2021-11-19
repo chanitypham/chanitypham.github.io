@@ -311,7 +311,7 @@ section {
 #text-carousel-intro-section .caption h1 {
 	margin-top: 0;
 	margin-bottom: 5px;
-	font-size: 80px!important;
+	font-size: 80px;
 	text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
 	/*font-family: "Itim", Helvetica, Arial, sans-serif!important;*/
 	font-family: 'Itim', Arial, Helvetica, sans-serif!important;
