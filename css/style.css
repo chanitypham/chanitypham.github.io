@@ -2104,8 +2104,8 @@ html::-webkit-scrollbar-thumb:active {
     color: #212226;
     margin: 10px 5px;
     padding: 5px 0px 10px 0px;
-    height: 750px;
-    overflow: auto;
+    height: 700px;
+    overflow: hidden;
 }
 
 .pj-showcase-img-container {
@@ -2136,4 +2136,13 @@ html::-webkit-scrollbar-thumb:active {
 
 #project-section{
 	text-align: center;
+}
+
+.view-cert {
+	color: #20accf;
+	font-weight: 600;
+}
+
+.view-cert:hover {
+	color: #08809e
 }
