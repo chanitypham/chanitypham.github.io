@@ -2102,8 +2102,10 @@ html::-webkit-scrollbar-thumb:active {
     background-color: #c5f3ff;
     border-radius: 20px!important;
     color: #212226;
-	margin: 10px 5px;
-	padding: 5px 0px 10px 0px;
+    margin: 10px 5px;
+    padding: 5px 0px 10px 0px;
+    height: 750px;
+    overflow: auto;
 }
 
 .pj-showcase-img-container {
@@ -2116,6 +2118,7 @@ html::-webkit-scrollbar-thumb:active {
 
 .pj-showcase-details {
 	margin: 20px 40px;
+	height: 700px;
 }
 
 .pj-showcase-title {
